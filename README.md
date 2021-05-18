@@ -57,6 +57,10 @@ We will be evaluating
 
 #### Test Cases
 
-1.  Please find in root folder TestCasesProjectPizzaOrderForm.xlsx file which includes improvements, 
-    bugs and test cases (not all) in different sheets.
+
+1. Please find in root folder `TestCasesProjectPizzaOrderForm.xlsx` file which includes improvements, 
+    bugs and test cases (not all) in different sheets
+2. Using ```mvn test``` you can run test in parallel 
+3. In ```src/test/resources/screenshots``` folder you can find the failed test screenshot
+4. in ```target/surefire-reports/index.html``` you can find reports 
 
