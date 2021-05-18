@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>com.sample</artifactId>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+      </plugin>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.0.0-M3</version>
+
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+
+
+    <!--TestNG-->
+    <dependency>
+      <artifactId>testng</artifactId>
+      <groupId>org.testng</groupId>
+      <version>6.14.3</version>
+    </dependency>
+
+    <!--Selenium-->
+    <dependency>
+      <artifactId>selenium-java</artifactId>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <version>3.141.59</version>
+    </dependency>
+    <dependency>
+      <artifactId>selenium-server</artifactId>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <version>3.141.59</version>
+    </dependency>
+    <!--Maven-->
+    <dependency>
+      <artifactId>maven-install-plugin</artifactId>
+      <groupId>org.apache.maven.plugins</groupId>
+      <version>3.0.0-M1</version>
+    </dependency>
+    <dependency>
+      <artifactId>maven-surefire-plugin</artifactId>
+      <groupId>org.apache.maven.plugins</groupId>
+      <version>3.0.0-M3</version>
+    </dependency>
+
+    <!--log4j-->
+    <dependency>
+      <artifactId>log4j</artifactId>
+      <groupId>log4j</groupId>
+      <version>1.2.17</version>
+    </dependency>
+  </dependencies>
+  <groupId>demo</groupId>
+  <modelVersion>4.0.0</modelVersion>
+
+
+  <version>1.0-SNAPSHOT</version>
+
+</project>
